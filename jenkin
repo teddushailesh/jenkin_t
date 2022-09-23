@@ -1,0 +1,27 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Initiation') {
+            steps {
+                echo 'Welcome(Pipeline SCM)'
+            }
+        }
+        stage('Build') {
+            steps {
+                echo 'Building App (Pipeline SCM)'
+            }
+        }
+        
+        stage('Test') {
+            steps {
+                echo 'Testing App (Pipeline SCM)'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying App (Pipeline SCM)'
+            }
+        }
+    }
+}
